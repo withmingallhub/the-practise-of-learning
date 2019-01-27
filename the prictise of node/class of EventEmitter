@@ -1,0 +1,151 @@
+// console.log("by world!");
+// var express = require('express');
+
+// http.createServer(function (request, response) {
+
+//     // 发送 HTTP 头部 
+//     // HTTP 状态值: 200 : OK
+//     // 内容类型: text/plain
+//     response.writeHead(200, {'Content-Type': 'text/plain'});
+
+//     // 发送响应数据 "Hello World"
+//     response.end('Hello World\n');
+// }).listen(8888);
+
+// console.log('Server running at http://127.0.0.1:8888/');
+
+//文件夹中的内容
+// var fs = require("fs");
+// var data = fs.readFileSync("C:\\Users\\ming\\Desktop\\up.txt");
+// console.log(data.toString());
+// console.log("程序之行结束！");
+
+
+// 引入 events 模块
+// var events = require('events');
+// // 创建 eventEmitter 对象
+// var eventEmitter = new events.EventEmitter();
+
+// // 创建事件处理程序
+// var connectHandler = function connected() {
+//    console.log('连接成功。');
+  
+//    // 触发 data_received 事件 
+//    eventEmitter.emit('data_received');
+// }
+
+// // 绑定 connection 事件处理程序
+// eventEmitter.on('connection', connectHandler);
+ 
+// // 使用匿名函数绑定 data_received 事件
+// eventEmitter.on('data_received', function(){
+//    console.log('数据接收成功。');
+// });
+
+// // 触发 connection 事件 
+// eventEmitter.emit('connection');
+
+// console.log("程序执行完毕。");  
+
+
+
+
+
+//event.js 文件
+// var EventEmitter = require('events').EventEmitter; 
+// var event = new EventEmitter(); //创建方法
+// event.on('somet', function() {  //注册一个somet的监听
+//     console.log('some_event 事件触发'); 
+// }); 
+// event.addListener('somet',function(){ //在监听的尾部注册一个监听
+//     console.log('尾部的监听触发');
+// })
+// event.once('somet',function(){ // 注册一个触发一次的监听
+//     console.log('该监听只触发一次');
+// })
+// setTimeout(function() { //在1000毫秒之后向event对象发送somet事件，此时会调用somet监听器
+//     event.emit('somet');  
+// }, 1000); 
+// setTimeout(function (){//在2000毫秒之后再次向event对象发送事件somet，再次调用somet监听器
+//     event.emit('somet');
+// },2000);
+
+
+
+
+//删除监听
+// var funshu = function(){
+//     console.log('该删除的监听！');
+// }
+// var EventEmitter = require('events').EventEmitter; 
+// var event = new EventEmitter(); //创建方法
+// event.on('somet', function() {  //注册一个somet的监听
+//     console.log('some_event 事件触发'); 
+// }); 
+// event.addListener('somet',funshu);
+// event.once('somet',function(){ // 注册一个触发一次的监听
+//     console.log('该监听只触发一次');
+// })
+// event.removeListener('somet',funshu);//删除该监听removeAllListeners()会删除所有的监听，如果指明监听的名称，将删除所有该名称的监听
+// setTimeout(function() { //在1000毫秒之后向event对象发送somet事件，此时会调用somet监听器
+//     event.emit('somet');  
+// }, 1000); 
+// setTimeout(function (){//在2000毫秒之后再次向event对象发送事件somet，再次调用somet监听器
+//     event.emit('somet');
+// },2000);
+
+
+
+
+// var EventEmitter = require('events').EventEmitter; 
+// var event = new EventEmitter(); //创建方法
+// event.setMaxListeners(12);  
+// event.on('somet', function() {  //注册一个somet的监听
+//     console.log('第一个监听'); 
+// });
+// event.on('somet',function(){
+//     console.log('第二个监听');
+// })
+// event.on('somet',function(){
+//     console.log('第三个监听');
+// })
+// event.on('somet',function(){
+//     console.log('第四个监听');
+// })
+// event.on('somet',function(){
+//     console.log('第五个监听');
+// })
+// event.on('somet',function(){
+//     console.log('第六个监听');
+// })
+// event.on('somet',function(){
+//     console.log('第七个监听');
+// })
+// event.on('somet',function(){
+//     console.log('第八个监听');
+// })
+// event.on('somet',function(){
+//     console.log('第九个监听');
+// })
+// event.on('somet',function(){
+//     console.log('第十个监听');
+// })
+// event.on('somet',function(){
+//     console.log('第十1个监听');
+// })
+// var arry = event.listeners('somet');//返回监听数组的个数
+// var sum = event.listenerCount('somet');//返回监听数组
+// console.log(sum);
+// console.log(arry);
+// setTimeout(function() { //在1000毫秒之后向event对象发送somet事件，此时会调用somet监听器
+//     event.emit('somet');  
+// }, 1000);
+
+
+
+
+
+//error事件
+var events = require('events'); 
+var emitter = new events.EventEmitter(); 
+emitter.emit('error'); 
