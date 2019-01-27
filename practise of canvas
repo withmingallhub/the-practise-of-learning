@@ -1,0 +1,22 @@
+var drawing = document.getElementById("drawing");
+		var ctx = drawing.getContext("2d");
+		// ctx.fillStyle = "#0000ff";
+		// ctx.fillRect(30, 30, 50, 50);
+		// ctx.beginPath();
+		// ctx.arc(200,200,100,Math.PI,Math.PI *2,false);
+		// ctx.fill();
+		// ctx.closePath();
+
+		// ctx.strokeStyle = "blue";
+		// ctx.strokeRect(100,100,300,200); //笔触，描边
+
+		// ctx.beginPath(); //开始画线
+		// ctx.moveTo(100,100);//将画笔移动到改点
+		// ctx.lineTo(200,200);//用画笔画此时是抽象的一个线，没有显示在画布上
+		// ctx.lineTo(200,100);
+		// ctx.lineWidth = "10";//线的粗细
+		// ctx.closePath();//形成闭合回路
+		// ctx.strokeStyle = "red";//划线的颜色
+		// ctx.stroke();//划线
+		// ctx.fillStyle = 'skyblue';//填充的颜色
+		// ctx.fill();//填充
