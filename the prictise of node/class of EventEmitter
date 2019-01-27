@@ -51,6 +51,44 @@
 
 
 
+
+        //var a = 0;
+        // function fb(ab){
+        //     console.log(ab);
+        // }
+        // function time(timer,callback){
+        //     setTimeout(function(){
+        //         a = 6;
+        //         callback(a);
+        //     },timer);
+        // }
+        // console.log(a);
+        // time(3000,function(x){
+        //     console.log(x);
+        // });
+
+
+
+// var a = 0; 
+// function bb(x) {
+//     console.log(x);
+// }
+ 
+// function timer(time) {
+//     setTimeout(function () {
+//         a = 6;
+//     }, time);
+// }
+ 
+// //调用:
+//     console.log(a);
+//     timer(3000);
+//     bb(a);
+
+
+
+
+
 //event.js 文件
 // var EventEmitter = require('events').EventEmitter; 
 // var event = new EventEmitter(); //创建方法
